@@ -117,7 +117,3 @@ def check_PAN_aadhaar_linkage():
     except Exception as e:
         print(e)
         return jsonify({"error": "Error in Checking the linkage status of PAN and Aadhaar."})
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(asgi_app, host='0.0.0.0', port=5001)
